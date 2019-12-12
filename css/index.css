@@ -1,1 +1,318 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Gupter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Gupter Regular'), local('Gupter-Regular'), url(https://fonts.gstatic.com/s/gupter/v1/2-cm9JNmxJqPO1QkZpy7.ttf) format('truetype');
+}
+/* variables */
+/*mixins*/
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+  font-family: 'Gupter', serif;
+}
+.navcontainer {
+  font-size: 2.5rem;
+  font-family: 'Gupter', serif;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  width: 70%;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+.navcontainer a:hover {
+  transform: rotate(15deg);
+  color: grey;
+  background-color: lightgrey;
+}
+hr {
+  border-top: 1px dashed darkgrey;
+  width: 70%;
+}
+header {
+  display: flex;
+  margin-right: 15%;
+  margin-left: 15%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  width: 70%;
+  background-color: lightgrey;
+}
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+header .meimg {
+  justify-content: flex-start;
+  padding-right: 10%;
+  padding-left: 15%;
+  height: auto;
+}
+@media (max-width: 500px) {
+  header .meimg {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+}
+.aboutme {
+  align-items: center;
+  flex-wrap: wrap;
+  width: 45%;
+  padding-top: 1%;
+}
+@media (max-width: 500px) {
+  .aboutme {
+    width: 70%;
+    text-align: left;
+    margin-left: -18%;
+  }
+}
+.aboutme h2 {
+  font-size: 3.5rem;
+  padding-bottom: 1%;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .aboutme h2 {
+    text-align: left;
+    width: 100%;
+  }
+}
+.aboutme h3 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .aboutme h3 {
+    text-align: left;
+    font-size: 2rem;
+  }
+}
+.aboutme p {
+  font-size: 2.5rem;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .aboutme p {
+    text-align: left;
+  }
+}
+.maincontainer {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 500px) {
+  .maincontainer {
+    flex-direction: column;
+  }
+}
+.skills {
+  background-color: lightgrey;
+  width: 23.3%;
+  margin-left: 15%;
+}
+@media (max-width: 500px) {
+  .skills {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: grey;
+  }
+}
+.skills h3 {
+  font-size: 2.5rem;
+}
+.skills ul {
+  margin-left: 15%;
+}
+.skills li {
+  font-size: 2rem;
+  padding-top: 0.1%;
+  padding-bottom: 5%;
+}
+.workhist {
+  background-color: darkgrey;
+  width: 23.3%;
+}
+@media (max-width: 500px) {
+  .workhist {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+.workhist h3 {
+  font-size: 2.5rem;
+}
+.workhist ul {
+  margin-left: 15%;
+}
+.workhist li {
+  font-size: 2rem;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.workhist p {
+  font-size: 1.8rem;
+  padding-left: 1%;
+  padding-bottom: 1%;
+}
+.contact {
+  background-color: grey;
+  width: 23.3%;
+}
+@media (max-width: 500px) {
+  .contact {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: lightgrey;
+  }
+}
+.contact ul {
+  margin-left: 15%;
+}
+.contact li {
+  font-size: 2rem;
+  padding-top: 0.01%;
+  padding-bottom: 15%;
+}
+.contact h3 {
+  font-size: 2.5rem;
+}
