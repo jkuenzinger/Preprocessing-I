@@ -1,1 +1,239 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Gupter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Gupter Regular'), local('Gupter-Regular'), url(https://fonts.gstatic.com/s/gupter/v1/2-cm9JNmxJqPO1QkZpy7.ttf) format('truetype');
+}
+/* variables */
+/*mixins*/
+html,
+body {
+  height: 100%;
+}
+.navcontainer {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 70%;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+hr {
+  border-top: 1px dashed darkgrey;
+  width: 70%;
+}
+header {
+  display: flex;
+  margin-right: 15%;
+  margin-left: 15%;
+  width: 70%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: lightgrey;
+}
+header .meimg {
+  justify-content: flex-start;
+  padding-right: 10%;
+  padding-left: 15%;
+}
+.aboutme {
+  align-items: center;
+  flex-wrap: wrap;
+  width: 45%;
+  padding-top: 5%;
+}
+.aboutme h2 {
+  padding-bottom: 5px;
+}
+.aboutme h3 {
+  padding-bottom: 20px;
+}
+.maincontainer {
+  display: flex;
+  flex-direction: row;
+}
+.skills {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-color: grey;
+  width: 23.3%;
+  margin-left: 15%;
+}
+.skills li {
+  padding-top: 30px;
+  margin-top: 23px;
+}
+.skills h3 {
+  padding-left: 15px;
+}
+.workhist {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-color: darkgrey;
+  width: 23.3%;
+}
+.workhist li {
+  padding-top: 20px;
+  margin-top: 30px;
+}
+.workhist p {
+  padding-top: 5px;
+  padding-left: 5px;
+}
+.workhist h3 {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 15px;
+}
+.contact {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-color: lightgrey;
+  width: 23.3%;
+}
+.contact ul {
+  padding-top: 50px;
+}
+.contact li {
+  padding-top: 20px;
+}
+.contact h3 {
+  padding-left: 15px;
+}
